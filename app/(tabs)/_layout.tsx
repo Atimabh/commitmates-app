@@ -5,6 +5,9 @@ import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
+import Feather from '@expo/vector-icons/Feather';
+
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -17,18 +20,27 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: 'Commitments',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+            <Feather name="target" size={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="mates"
         options={{
-          title: 'Explore',
+          title: 'Mates',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <Feather name="users" size={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profile',
+          tabBarIcon: ({ color, focused }) => (
+            <Feather name="user" size={24} color={color} />
           ),
         }}
       />
