@@ -9,10 +9,22 @@ export const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     padding: 16,
   },
-  header: {},
+  nudgeHeading: {
+    fontFamily: 'InterSemiBold',
+    fontSize: 18,
+    marginBottom: 6,
+  },
+  nudgeContainer: {
+    marginBottom: 24,
+  },
+  header: {
+    marginBottom: 24,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   logo: {
-    width: 150,
-    height: 20,
-    marginBottom: 32,
+    fontFamily: 'DenverSerialHeavy',
+    fontSize: 26,
   },
 })

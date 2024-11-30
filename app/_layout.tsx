@@ -21,6 +21,7 @@ export default function RootLayout() {
     InterMedium: require('../assets/fonts/InterMedium.ttf'),
     InterSemiBold: require('../assets/fonts/InterSemiBold.ttf'),
     InterThin: require('../assets/fonts/InterRegular.ttf'),
+    DenverSerialHeavy: require('../assets/fonts/DenverSerialHeavy.ttf'),
   })
 
   useEffect(() => {

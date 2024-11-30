@@ -2,17 +2,31 @@ import { Image } from 'expo-image'
 import React from 'react'
 import { SafeAreaView, ScrollView, Text, View } from 'react-native'
 import { styles } from './styles'
-import CommitmentCard from './CommitmentCard'
+import { Feather } from '@expo/vector-icons'
+import Post from '../Post'
+import CommitmentNudge from '../CommitmentNudge'
 
 export default function Commitments() {
   return (
     <SafeAreaView style={styles.safeAreaView}>
-      <ScrollView style={styles.container}>
+      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <Image source={require('@/assets/images/logo/logo.png')} style={styles.logo} contentFit="contain" />
+          <Text style={styles.logo}>commitmates</Text>
+          <Feather name="bell" size={24} />
         </View>
 
-        <CommitmentCard />
+        {/* <Text style={styles.nudgeHeading}>Don't let the streak die!</Text> */}
+        {/* <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.nudgeContainer}>
+          <CommitmentNudge />
+          <CommitmentNudge />
+        </ScrollView> */}
+
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+
+        {/* <CommitmentCard /> */}
       </ScrollView>
     </SafeAreaView>
   )
