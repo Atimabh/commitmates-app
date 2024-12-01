@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Platform, SafeAreaView } from 'react-native'
-import Commitments from '@/components/Commitments'
+import Home from '@/components/Home'
 
 export default function HomeScreen() {
-  return <Commitments />
+  return <Home />
 }

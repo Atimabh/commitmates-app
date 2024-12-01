@@ -27,7 +27,8 @@ export const Colors = {
 
 export const ColorLibrary = {
   primaryBlack: '#202123',
+  primaryPurple: '#6439FF',
   lightGrey: '#818181',
   darkGrey: '#535353',
-  offWhite: '#F9F9F9'
+  offWhite: '#F2F2F2',
 }

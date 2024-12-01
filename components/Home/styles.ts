@@ -1,24 +1,30 @@
-import { ColorLibrary } from '@/constants/Colors'
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
+  safeAreaView: {
+    flex: 1,
+  },
   container: {
     flex: 1,
     backgroundColor: '#ffffff',
+    padding: 16,
   },
-  contentContainer: {
-    flex: 1,
-    paddingHorizontal: 16,
+  nudgeHeading: {
+    fontFamily: 'InterSemiBold',
+    fontSize: 18,
+    marginBottom: 6,
+  },
+  nudgeContainer: {
+    marginBottom: 24,
   },
   header: {
+    marginBottom: 24,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 14,
   },
-  heading: {
-    fontFamily: 'InterSemiBold',
+  logo: {
+    fontFamily: 'DenverSerialHeavy',
     fontSize: 26,
-    color: ColorLibrary.primaryBlack,
   },
 })

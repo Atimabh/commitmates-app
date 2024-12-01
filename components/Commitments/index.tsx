@@ -1,32 +1,21 @@
-import { Image } from 'expo-image'
-import React from 'react'
-import { SafeAreaView, ScrollView, Text, View } from 'react-native'
-import { styles } from './styles'
 import { Feather } from '@expo/vector-icons'
-import Post from '../Post'
-import CommitmentNudge from '../CommitmentNudge'
+import { styles } from './styles'
+import { Pressable, SafeAreaView, ScrollView, Text, View } from 'react-native'
+import { ColorLibrary } from '@/constants/Colors'
+import GroupListItem from './GroupListItem'
 
 export default function Commitments() {
   return (
-    <SafeAreaView style={styles.safeAreaView}>
-      <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
+    <SafeAreaView style={styles.container}>
+      <ScrollView contentContainerStyle={styles.contentContainer}>
         <View style={styles.header}>
-          <Text style={styles.logo}>commitmates</Text>
-          <Feather name="bell" size={24} />
+          <Text style={styles.heading}>Commitments</Text>
+          <Pressable>
+            <Feather name="plus-circle" size={24} color={ColorLibrary.primaryBlack} />
+          </Pressable>
         </View>
 
-        {/* <Text style={styles.nudgeHeading}>Don't let the streak die!</Text> */}
-        {/* <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.nudgeContainer}>
-          <CommitmentNudge />
-          <CommitmentNudge />
-        </ScrollView> */}
-
-        <Post />
-        <Post />
-        <Post />
-        <Post />
-
-        {/* <CommitmentCard /> */}
+        <GroupListItem />
       </ScrollView>
     </SafeAreaView>
   )

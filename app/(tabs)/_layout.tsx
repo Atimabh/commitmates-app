@@ -7,7 +7,7 @@ import { useColorScheme } from '@/hooks/useColorScheme'
 
 import Feather from '@expo/vector-icons/Feather'
 import { BlurView } from 'expo-blur'
- 
+
 export default function TabLayout() {
   const colorScheme = useColorScheme()
 
@@ -26,15 +26,15 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="mates"
+        name="commitments"
         options={{
-          title: 'Mates',
-          tabBarIcon: ({ color, focused }) => <Feather name="users" size={24} color={color} />,
+          title: 'Commitments',
+          tabBarIcon: ({ color, focused }) => <Feather name="check-circle" size={24} color={color} />,
         }}
       />
       <Tabs.Screen
         name="profile"
-        options={{
+        options={{ 
           title: 'Profile',
           tabBarIcon: ({ color, focused }) => <Feather name="user" size={24} color={color} />,
         }}

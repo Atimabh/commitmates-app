@@ -16,6 +16,9 @@ export const styles = StyleSheet.create({
   },
   user: {
     paddingHorizontal: 16,
+    paddingBottom: 16,
+    borderBottomColor: ColorLibrary.offWhite,
+    borderBottomWidth: 1,
   },
   info: {
     flexDirection: 'row',
@@ -78,5 +81,57 @@ export const styles = StyleSheet.create({
     fontFamily: 'InterMedium',
     fontSize: 14,
     color: ColorLibrary.primaryBlack,
+  },
+  commitmentButtonsContainer: {
+    marginVertical: 16,
+    paddingHorizontal: 16,
+  },
+  commitmentButton: {
+    width: 54,
+    height: 54,
+    backgroundColor: ColorLibrary.offWhite,
+    borderRadius: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 16,
+  },
+  commitmentButtonText: {
+    fontSize: 22,
+  },
+  active: {
+    borderColor: ColorLibrary.primaryPurple,
+    borderWidth: 1.5,
+  },
+  commitmentGroupContainer: {
+    paddingHorizontal: 16,
+  },
+  groupHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 24,
+  },
+  groupName: {
+    fontFamily: 'InterMedium',
+    fontSize: 18,
+  },
+  groupStreak: {
+    fontFamily: 'InterMedium',
+    fontSize: 18,
+  },
+  sectionContainer: {
+    marginBottom: 24,
+    paddingLeft: 16,
+  },
+  sectionName: {
+    fontFamily: 'InterMedium',
+    fontSize: 14,
+    marginBottom: 16,
+  },
+  post: {
+    width: 116,
+    height: 116,
+    borderRadius: 6,
+    marginRight: 8,
   },
 })
