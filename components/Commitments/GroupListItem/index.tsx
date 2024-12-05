@@ -1,18 +1,23 @@
-import { Text, View } from 'react-native'
+import { Pressable, Text, View } from 'react-native'
 import { styles } from './styles'
+import { router } from 'expo-router'
 
-export default function GroupListItem() {
+type GroupListItemPropsType = {
+  group: any
+}
+
+export default function GroupListItem({ group }: GroupListItemPropsType) {
   return (
-    <View style={styles.container}>
+    <Pressable style={({ pressed }) => [styles.container, { opacity: pressed ? 0.5 : 1 }]} onPress={() => router.push('/commitments/groupDetails')}>
       <View style={styles.iconContainer}>
-        <Text style={styles.icon}>💪🏼</Text>
+        <Text style={styles.icon}>{group.icon}</Text>
       </View>
       <View>
-        <Text style={styles.name}>Lose 20 kgs</Text>
-        <Text style={styles.memberCount}>24 Members</Text>
+        <Text style={styles.name}>{group.name}</Text>
+        <Text style={styles.memberCount}>{group.member_count} Members</Text>
       </View>
 
-      <Text style={styles.streak}>🔥 56</Text>
-    </View>
+      <Text style={styles.streak}>🔥 {group.streak_count}</Text>
+    </Pressable>
   )
 }
