@@ -3,6 +3,7 @@ import { styles } from './styles'
 import { Pressable, SafeAreaView, Text, View } from 'react-native'
 import image from '@/assets/images/onboarding/two.png'
 import { ColorLibrary } from '@/constants/Colors'
+import { router } from 'expo-router'
 
 export default function ScreenTwo() {
   return (
@@ -19,7 +20,7 @@ export default function ScreenTwo() {
         </Text>
         <Text style={styles.description}>Upload daily proof to keep everyone on track. Build your streaks every day.</Text>
 
-        <Pressable style={styles.continueButton} onPress={() => {}}>
+        <Pressable style={styles.continueButton} onPress={() => router.push('/onboarding/three')}>
           <Text style={styles.continueButtonText}>Continue</Text>
         </Pressable>
       </View>

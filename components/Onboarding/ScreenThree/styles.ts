@@ -35,6 +35,7 @@ export const styles = StyleSheet.create({
     color: ColorLibrary.primaryPurple,
   },
   description: {
+    width: 340,
     marginHorizontal: 'auto',
     fontFamily: 'InterRegular',
     fontSize: 16,

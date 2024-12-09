@@ -35,10 +35,9 @@ export const styles = StyleSheet.create({
     color: ColorLibrary.primaryPurple,
   },
   description: {
-    width: 330,
     marginHorizontal: 'auto',
     fontFamily: 'InterRegular',
-    fontSize: 14,
+    fontSize: 16,
     textAlign: 'center',
     color: ColorLibrary.lightGrey,
   },

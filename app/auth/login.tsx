@@ -1,16 +1,8 @@
 import React from 'react'
-import { View, Text, Button } from 'react-native'
-import { useRouter } from 'expo-router'
+import Login from '@/components/Auth/Login'
 
 const LoginScreen = () => {
-  const router = useRouter()
-
-  return (
-    <View>
-      <Text>Login</Text>
-      <Button title="Go to App" onPress={() => router.replace('/(tabs)')} />
-    </View>
-  )
+  return <Login />
 }
 
 export default LoginScreen
